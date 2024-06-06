@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.canvas{
+
+  border: 1px solid black;
+
+}
+
+.buttonConfig{
+padding: 10px;
+margin: 20px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+}
+
+.buttonConfig:hover{
+  background-color: red;
+}
