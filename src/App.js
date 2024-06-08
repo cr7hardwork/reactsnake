@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <h1>Snake Game</h1>
     <Canvas  width={600} height={600}/>
-  
     </div>
   );
 }
