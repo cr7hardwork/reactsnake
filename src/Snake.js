@@ -1,29 +1,19 @@
-import React, { useState, useEffect } from "react";
-import Canvas from "./Canvas";
-
-export default function Snake() {
-  const [snake, setSnake] = useState([{ x: 15, y: 15 }]);
-  const [dir, setDir] = useState("right");
-  const head = snake[0];
+import React, { useEffect } from "react";
+export default function Snake({context,height,width,snake}) {
   
+  const drawSnake = () => {
+    if(!context) return;
+    context.clearRect(0, 0, width, height);
+    for (let i = 0; i < snake.length; i++) {
+      context.fillStyle = i === 0 ? "black" : "red";
+      context.fillRect(snake[i].x * 20, snake[i].y * 20, 20, 20);
+    }
+  };
 
  
+useEffect(() =>{
+  drawSnake();
+},[snake])
 
- 
-
-
-  
-
- 
-  
-
-
-
-
-
-
-
-  
-
-return null
+  return null
 }

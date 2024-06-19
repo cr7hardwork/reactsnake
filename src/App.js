@@ -1,12 +1,12 @@
 
 import './App.css';
-import Canvas from './Canvas';
-
+import GameLogic from './GameLogic';
 function App() {
   return (
     <div className="App">
       <h1>Snake Game</h1>
-    <Canvas  width={600} height={600}/>
+    <GameLogic  width={600} height={600}/>
+    
     </div>
   );
 }

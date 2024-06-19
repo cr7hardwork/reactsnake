@@ -1,19 +1,14 @@
-export default function Buttons(){
+
+export default function Buttons({startGame,pauseGame,resetGame}){
 
 
     return(
-        <>
-       <button className="buttonConfig" onClick={() => {alert("aziz")}}>Start</button>
-        <button className="buttonConfig">Pause</button>
-        <button className="buttonConfig">Reset</button>
-        </>
+         
+         <>
+                 <button onClick={startGame}> Start</button>
+                 <button onClick={pauseGame}>Pause</button>
+                 <button onClick={resetGame}>Reset</button>
+         </> 
         
     )
 }
-
-
-
-
-
-
-

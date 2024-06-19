@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function Score({updateScore}) {
-  const [score, setScore] = useState(0);
-
+export default function Score({score}){
  
 
   return (
